@@ -30,7 +30,7 @@ class Room(TimeStampMixin):
         default=2,
         validators=[
             MaxValueValidator(10),
-            MinValueValidator(2)
+            MinValueValidator(0)
         ]
     )
     private = models.BooleanField(
