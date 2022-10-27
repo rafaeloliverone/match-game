@@ -25,6 +25,9 @@ docker-compose up -d
 ## Link de acesso a página de admin da aplicação.
 http://ec2-44-206-213-177.compute-1.amazonaws.com/admin/login/?next=/admin/
 
+## Documentação da API com Redoc.
+http://ec2-44-206-213-177.compute-1.amazonaws.com/documentation-api/
+
 ## Arquitetura 🛠
   - AWS EC2 
   - Arquitetura MVT
