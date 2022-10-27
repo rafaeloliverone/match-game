@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  web:
+    build: ./
+    container_name: web
+    command: sh entrypoint.sh
+    env_file:
+      - '.env'
+    volumes:
+      - .:/code
+      - static_vol:/code/players/static
+      - media_vol:/code/players/media
+    ports:
+      - "8000:8000"
+
+  nginx:
+    build: ./nginx
+    volumes:
+      - static_vol:/code/players/static
+      - media_vol:/code/players/media
+    ports:
+      -  "80:80"
+    depends_on:
+      - web
+
+volumes:
+    static_vol:
+    media_vol:

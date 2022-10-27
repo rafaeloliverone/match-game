@@ -1,0 +1,9 @@
+Django>=3.2
+psycopg2-binary>=2.8
+djangorestframework==3.12.4
+django-filter==22.1
+drf-yasg==1.21.4
+gunicorn==20.1.0
+bcrypt==4.0.1
+pytz
+django-cors-headers
