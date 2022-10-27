@@ -10,7 +10,6 @@ python manage.py createsuperuser \
 fi
 $@
 
-#python manage.py runserver 0.0.0.0:8000
 # python manage.py loaddata ./suppliers/database/loaddata.json
 
 gunicorn game.wsgi:application --bind 0.0.0.0:8000

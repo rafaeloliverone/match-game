@@ -9,16 +9,16 @@ services:
       - '.env'
     volumes:
       - .:/code
-      - static_vol:/code/players/static
-      - media_vol:/code/players/media
+      - static_vol:/code/game/static
+      - media_vol:/code/game/media
     ports:
       - "8000:8000"
 
   nginx:
     build: ./nginx
     volumes:
-      - static_vol:/code/players/static
-      - media_vol:/code/players/media
+      - static_vol:/code/game/static
+      - media_vol:/code/game/media
     ports:
       -  "80:80"
     depends_on:
