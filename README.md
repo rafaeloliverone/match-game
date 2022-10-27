@@ -22,6 +22,8 @@
 # rodar o comando do docker compose subir o container de back-end e nginx.
 docker-compose up -d
 ```
+## Link de acesso a página de admin da aplicação.
+http://ec2-44-206-213-177.compute-1.amazonaws.com/admin/login/?next=/admin/
 
 ## Arquitetura 🛠
   - AWS EC2 
